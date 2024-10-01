@@ -11,7 +11,11 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in
       {
-        devShells.default = pkgs.mkShell { packages = [ pkgs.rustc pkgs.cargo ]; };
+        devShells.default = pkgs.mkShell { packages = [
+          pkgs.rustc
+          pkgs.cargo
+          pkgs.rustfmt
+        ]; };
       }
     );
 }
