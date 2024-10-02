@@ -3,7 +3,7 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main() {
-    println!("Number guessing game.");
+    println!("Number guessing game. You need to guess a number between 1 and 100.505");
 
     let mut rng = rand::thread_rng();
     // this explicit type annotation would have been inferred by virtue of the `cmp` usage below
